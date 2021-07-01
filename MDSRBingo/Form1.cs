@@ -194,6 +194,12 @@ namespace MDSRBingo
                     "\n\nIf this is a custom game, please ensure you saved your file when added.");
             }
         }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            SettingsTab settings = new SettingsTab();
+            settings.Show();
+        }
     }
 
 }

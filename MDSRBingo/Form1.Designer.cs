@@ -41,7 +41,7 @@
             this.b3 = new System.Windows.Forms.Label();
             this.o2 = new System.Windows.Forms.Label();
             this.g2 = new System.Windows.Forms.Label();
-            this.freeSpace = new System.Windows.Forms.Label();
+            this.n2 = new System.Windows.Forms.Label();
             this.i2 = new System.Windows.Forms.Label();
             this.b2 = new System.Windows.Forms.Label();
             this.o1 = new System.Windows.Forms.Label();
@@ -64,6 +64,7 @@
             this.colorPicker = new System.Windows.Forms.Button();
             this.displayColor = new System.Windows.Forms.TextBox();
             this.gameSelector = new System.Windows.Forms.ComboBox();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.bingoBoard.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +90,7 @@
             this.bingoBoard.Controls.Add(this.b3, 0, 3);
             this.bingoBoard.Controls.Add(this.o2, 4, 2);
             this.bingoBoard.Controls.Add(this.g2, 3, 2);
-            this.bingoBoard.Controls.Add(this.freeSpace, 2, 2);
+            this.bingoBoard.Controls.Add(this.n2, 2, 2);
             this.bingoBoard.Controls.Add(this.i2, 1, 2);
             this.bingoBoard.Controls.Add(this.b2, 0, 2);
             this.bingoBoard.Controls.Add(this.o1, 4, 1);
@@ -269,18 +270,18 @@
             this.g2.Text = "g2";
             this.g2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // freeSpace
+            // n2
             // 
-            this.freeSpace.AutoSize = true;
-            this.freeSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.freeSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.freeSpace.Location = new System.Drawing.Point(235, 235);
-            this.freeSpace.Margin = new System.Windows.Forms.Padding(0);
-            this.freeSpace.Name = "freeSpace";
-            this.freeSpace.Size = new System.Drawing.Size(116, 116);
-            this.freeSpace.TabIndex = 12;
-            this.freeSpace.Text = "FREE";
-            this.freeSpace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.n2.AutoSize = true;
+            this.n2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.n2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n2.Location = new System.Drawing.Point(235, 235);
+            this.n2.Margin = new System.Windows.Forms.Padding(0);
+            this.n2.Name = "n2";
+            this.n2.Size = new System.Drawing.Size(116, 116);
+            this.n2.TabIndex = 12;
+            this.n2.Text = "n2";
+            this.n2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // i2
             // 
@@ -443,7 +444,7 @@
             this.generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generate.Location = new System.Drawing.Point(12, 550);
             this.generate.Name = "generate";
-            this.generate.Size = new System.Drawing.Size(294, 52);
+            this.generate.Size = new System.Drawing.Size(145, 52);
             this.generate.TabIndex = 3;
             this.generate.Text = "Generate";
             this.generate.UseVisualStyleBackColor = true;
@@ -544,11 +545,23 @@
             this.gameSelector.Size = new System.Drawing.Size(294, 32);
             this.gameSelector.TabIndex = 8;
             // 
+            // settingsButton
+            // 
+            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Location = new System.Drawing.Point(172, 550);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(145, 52);
+            this.settingsButton.TabIndex = 9;
+            this.settingsButton.Text = "Settings";
+            this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 614);
+            this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.gameSelector);
             this.Controls.Add(this.displayColor);
             this.Controls.Add(this.colorPicker);
@@ -582,7 +595,7 @@
         private System.Windows.Forms.Label b3;
         private System.Windows.Forms.Label o2;
         private System.Windows.Forms.Label g2;
-        private System.Windows.Forms.Label freeSpace;
+        private System.Windows.Forms.Label n2;
         private System.Windows.Forms.Label i2;
         private System.Windows.Forms.Label b2;
         private System.Windows.Forms.Label o1;
@@ -605,6 +618,7 @@
         private System.Windows.Forms.TextBox inputSeedTB;
         private System.Windows.Forms.Label currentSeed;
         private System.Windows.Forms.ComboBox gameSelector;
+        private System.Windows.Forms.Button settingsButton;
     }
 }
 
