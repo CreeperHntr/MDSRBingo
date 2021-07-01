@@ -117,7 +117,7 @@
             // 
             this.o4.AutoSize = true;
             this.o4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.o4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o4.Location = new System.Drawing.Point(469, 469);
             this.o4.Margin = new System.Windows.Forms.Padding(0);
             this.o4.Name = "o4";
@@ -130,7 +130,7 @@
             // 
             this.g4.AutoSize = true;
             this.g4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.g4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g4.Location = new System.Drawing.Point(352, 469);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
@@ -143,7 +143,7 @@
             // 
             this.n4.AutoSize = true;
             this.n4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.n4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n4.Location = new System.Drawing.Point(235, 469);
             this.n4.Margin = new System.Windows.Forms.Padding(0);
             this.n4.Name = "n4";
@@ -156,7 +156,7 @@
             // 
             this.i4.AutoSize = true;
             this.i4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.i4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.i4.Location = new System.Drawing.Point(118, 469);
             this.i4.Margin = new System.Windows.Forms.Padding(0);
             this.i4.Name = "i4";
@@ -169,7 +169,7 @@
             // 
             this.b4.AutoSize = true;
             this.b4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.b4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b4.Location = new System.Drawing.Point(1, 469);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
@@ -182,7 +182,7 @@
             // 
             this.o3.AutoSize = true;
             this.o3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.o3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o3.Location = new System.Drawing.Point(469, 352);
             this.o3.Margin = new System.Windows.Forms.Padding(0);
             this.o3.Name = "o3";
@@ -195,7 +195,7 @@
             // 
             this.g3.AutoSize = true;
             this.g3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.g3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g3.Location = new System.Drawing.Point(352, 352);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
@@ -208,7 +208,7 @@
             // 
             this.n3.AutoSize = true;
             this.n3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n3.Location = new System.Drawing.Point(235, 352);
             this.n3.Margin = new System.Windows.Forms.Padding(0);
             this.n3.Name = "n3";
@@ -221,7 +221,7 @@
             // 
             this.i3.AutoSize = true;
             this.i3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.i3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.i3.Location = new System.Drawing.Point(118, 352);
             this.i3.Margin = new System.Windows.Forms.Padding(0);
             this.i3.Name = "i3";
@@ -234,7 +234,7 @@
             // 
             this.b3.AutoSize = true;
             this.b3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b3.Location = new System.Drawing.Point(1, 352);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
@@ -247,7 +247,7 @@
             // 
             this.o2.AutoSize = true;
             this.o2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.o2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o2.Location = new System.Drawing.Point(469, 235);
             this.o2.Margin = new System.Windows.Forms.Padding(0);
             this.o2.Name = "o2";
@@ -260,7 +260,7 @@
             // 
             this.g2.AutoSize = true;
             this.g2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.g2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g2.Location = new System.Drawing.Point(352, 235);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
             this.g2.Name = "g2";
@@ -273,7 +273,7 @@
             // 
             this.freeSpace.AutoSize = true;
             this.freeSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.freeSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.freeSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.freeSpace.Location = new System.Drawing.Point(235, 235);
             this.freeSpace.Margin = new System.Windows.Forms.Padding(0);
             this.freeSpace.Name = "freeSpace";
@@ -286,7 +286,7 @@
             // 
             this.i2.AutoSize = true;
             this.i2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.i2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.i2.Location = new System.Drawing.Point(118, 235);
             this.i2.Margin = new System.Windows.Forms.Padding(0);
             this.i2.Name = "i2";
@@ -299,7 +299,7 @@
             // 
             this.b2.AutoSize = true;
             this.b2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b2.Location = new System.Drawing.Point(1, 235);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
             this.b2.Name = "b2";
@@ -312,7 +312,7 @@
             // 
             this.o1.AutoSize = true;
             this.o1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.o1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o1.Location = new System.Drawing.Point(469, 118);
             this.o1.Margin = new System.Windows.Forms.Padding(0);
             this.o1.Name = "o1";
@@ -325,7 +325,7 @@
             // 
             this.g1.AutoSize = true;
             this.g1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.g1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g1.Location = new System.Drawing.Point(352, 118);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
             this.g1.Name = "g1";
@@ -338,7 +338,7 @@
             // 
             this.n1.AutoSize = true;
             this.n1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n1.Location = new System.Drawing.Point(235, 118);
             this.n1.Margin = new System.Windows.Forms.Padding(0);
             this.n1.Name = "n1";
@@ -351,7 +351,7 @@
             // 
             this.i1.AutoSize = true;
             this.i1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.i1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.i1.Location = new System.Drawing.Point(118, 118);
             this.i1.Margin = new System.Windows.Forms.Padding(0);
             this.i1.Name = "i1";
@@ -364,7 +364,7 @@
             // 
             this.b1.AutoSize = true;
             this.b1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b1.Location = new System.Drawing.Point(1, 118);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
             this.b1.Name = "b1";
@@ -377,7 +377,7 @@
             // 
             this.o0.AutoSize = true;
             this.o0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.o0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.o0.Location = new System.Drawing.Point(469, 1);
             this.o0.Margin = new System.Windows.Forms.Padding(0);
             this.o0.Name = "o0";
@@ -390,7 +390,7 @@
             // 
             this.g0.AutoSize = true;
             this.g0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.g0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g0.Location = new System.Drawing.Point(352, 1);
             this.g0.Margin = new System.Windows.Forms.Padding(0);
             this.g0.Name = "g0";
@@ -403,7 +403,7 @@
             // 
             this.n0.AutoSize = true;
             this.n0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.n0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n0.Location = new System.Drawing.Point(235, 1);
             this.n0.Margin = new System.Windows.Forms.Padding(0);
             this.n0.Name = "n0";
@@ -416,7 +416,7 @@
             // 
             this.i0.AutoSize = true;
             this.i0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.i0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.i0.Location = new System.Drawing.Point(118, 1);
             this.i0.Margin = new System.Windows.Forms.Padding(0);
             this.i0.Name = "i0";
@@ -429,7 +429,7 @@
             // 
             this.b0.AutoSize = true;
             this.b0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.b0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b0.Location = new System.Drawing.Point(1, 1);
             this.b0.Margin = new System.Windows.Forms.Padding(0);
             this.b0.Name = "b0";
