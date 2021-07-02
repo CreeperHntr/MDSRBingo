@@ -18,9 +18,11 @@ namespace MDSRBingo
         private string[] files;
 
         // array of the bingo board's Labels
-        List<Label> bingoCells = new List<Label>();
+        static List<Label> bingoCells = new List<Label>();
 
         private int seed;
+
+        private Settings settings;
 
         public Form1()
         {
@@ -30,13 +32,21 @@ namespace MDSRBingo
         // when form is loaded
         private void Form1_Load(object sender, EventArgs e)
         {
-            // verifies that settings.json exists
-            ValidateSettings();
-            
             // gets necessary data for bingo board setup
             BingoBoardSetup();
 
+            // verifies that settings.json exists
+            ValidateSettings();
         }
+
+        private Settings GetJsonFile()
+        {
+            string jsonPath = Directory.GetCurrentDirectory() + "\\settings.json";
+            string json = File.ReadAllText(jsonPath);
+            settings = JsonConvert.DeserializeObject<Settings>(json);
+            return settings;
+        }
+
 
         // Known Issue: since json, if user malforms the data manually, there will be issues reading
         //              find a way to detect/ restructure if this happens
@@ -47,11 +57,15 @@ namespace MDSRBingo
 
             if(File.Exists(path))
             {
+                foreach(Label cell in bingoCells)
+                {
+                    cell.ForeColor = GetJsonFile().fontColor;
+                }
                 return;
             }
 
             // grabs default settings
-            var settings = Settings.Default();
+            settings = Settings.Default();
 
             string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
@@ -64,18 +78,9 @@ namespace MDSRBingo
             foreach (Label cell in this.bingoBoard.Controls)
             {
                 cell.MouseClick += new MouseEventHandler(ClickOnCell);
-
-                // this is for without a free space, see commented code below
                 cell.Text = "";
                 cell.BackColor = Color.Transparent;
                 bingoCells.Add(cell);
-
-                // uncomment this to readd free space (based on community reaction)
-                /*if (!(bingoBoard.GetRow(cell) == 2 && bingoBoard.GetColumn(cell) == 2))
-                {
-                    cell.Text = "";
-                    bingoCells.Add(cell);
-                }*/
             }
 
             // pulls supported games list and populates the game selector
@@ -101,33 +106,9 @@ namespace MDSRBingo
         // when user clicks on a bingo cell, update the color to match chosen color and turn transparent if misclicked
         public void ClickOnCell(object sender, MouseEventArgs e)
         {
-            // this is for without a free space, see commented code below
             Label label = (Label)sender;
-            label.BackColor = label.BackColor == displayColor.BackColor ? Color.Transparent : displayColor.BackColor;
-
-            // uncomment this to readd free space (based on community reaction)
-            /*if(!(bingoBoard.GetRow((Label) sender) == 2 && bingoBoard.GetColumn((Label) sender) == 2))
-            {
-                Label label = (Label) sender;
-                label.BackColor = label.BackColor == displayColor.BackColor ? Color.Transparent : displayColor.BackColor;
-            }*/
-
-        }
-
-        // allows user to set bingo board color
-        private void colorPicker_Click(object sender, EventArgs e)
-        {
-            ColorDialog MyDialog = new ColorDialog();
-            MyDialog.AllowFullOpen = false;
-            MyDialog.ShowHelp = true;
-            MyDialog.Color = displayColor.ForeColor;
-
-            if (MyDialog.ShowDialog() == DialogResult.OK)
-                displayColor.BackColor = MyDialog.Color;
-
-            foreach(Label cell in bingoCells) {
-                if(!(cell.BackColor == Color.Transparent)) { cell.BackColor = displayColor.BackColor; }
-            }
+            settings = GetJsonFile();
+            label.BackColor = label.BackColor == settings.tileColor ? Color.Transparent : settings.tileColor;
         }
 
         private void generate_Click(object sender, EventArgs e)
@@ -241,6 +222,8 @@ namespace MDSRBingo
             SettingsTab settings = new SettingsTab();
             settings.ShowDialog();
         }
+
+        public static List<Label> GetBingoCells() { return bingoCells; }
     }
 
 }

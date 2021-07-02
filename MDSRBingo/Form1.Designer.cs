@@ -58,13 +58,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.inputSeedText = new System.Windows.Forms.Label();
             this.currentSeedText = new System.Windows.Forms.Label();
-            this.inputSeedTB = new System.Windows.Forms.TextBox();
-            this.currentSeed = new System.Windows.Forms.Label();
-            this.colorDialog = new System.Windows.Forms.ColorDialog();
-            this.colorPicker = new System.Windows.Forms.Button();
-            this.displayColor = new System.Windows.Forms.TextBox();
             this.gameSelector = new System.Windows.Forms.ComboBox();
             this.settingsButton = new System.Windows.Forms.Button();
+            this.currentSeed = new System.Windows.Forms.Label();
+            this.inputSeedTB = new System.Windows.Forms.TextBox();
             this.bingoBoard.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -103,7 +100,7 @@
             this.bingoBoard.Controls.Add(this.n0, 2, 0);
             this.bingoBoard.Controls.Add(this.i0, 1, 0);
             this.bingoBoard.Controls.Add(this.b0, 0, 0);
-            this.bingoBoard.Location = new System.Drawing.Point(323, 12);
+            this.bingoBoard.Location = new System.Drawing.Point(12, 12);
             this.bingoBoard.Name = "bingoBoard";
             this.bingoBoard.RowCount = 5;
             this.bingoBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -442,9 +439,9 @@
             // generate
             // 
             this.generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.generate.Location = new System.Drawing.Point(12, 550);
+            this.generate.Location = new System.Drawing.Point(13, 774);
             this.generate.Name = "generate";
-            this.generate.Size = new System.Drawing.Size(145, 52);
+            this.generate.Size = new System.Drawing.Size(590, 40);
             this.generate.TabIndex = 3;
             this.generate.Text = "Generate";
             this.generate.UseVisualStyleBackColor = true;
@@ -453,18 +450,18 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74F));
             this.tableLayoutPanel2.Controls.Add(this.inputSeedText, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.currentSeedText, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.inputSeedTB, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.currentSeed, 1, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 444);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 646);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(294, 100);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(589, 100);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // inputSeedText
@@ -474,7 +471,7 @@
             this.inputSeedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputSeedText.Location = new System.Drawing.Point(3, 0);
             this.inputSeedText.Name = "inputSeedText";
-            this.inputSeedText.Size = new System.Drawing.Size(129, 50);
+            this.inputSeedText.Size = new System.Drawing.Size(147, 50);
             this.inputSeedText.TabIndex = 0;
             this.inputSeedText.Text = "Input Seed:";
             this.inputSeedText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -486,85 +483,62 @@
             this.currentSeedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentSeedText.Location = new System.Drawing.Point(3, 50);
             this.currentSeedText.Name = "currentSeedText";
-            this.currentSeedText.Size = new System.Drawing.Size(129, 50);
+            this.currentSeedText.Size = new System.Drawing.Size(147, 50);
             this.currentSeedText.TabIndex = 1;
             this.currentSeedText.Text = "Current Seed:";
             this.currentSeedText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // inputSeedTB
-            // 
-            this.inputSeedTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inputSeedTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSeedTB.Location = new System.Drawing.Point(135, 0);
-            this.inputSeedTB.Margin = new System.Windows.Forms.Padding(0);
-            this.inputSeedTB.Multiline = true;
-            this.inputSeedTB.Name = "inputSeedTB";
-            this.inputSeedTB.Size = new System.Drawing.Size(159, 50);
-            this.inputSeedTB.TabIndex = 2;
-            // 
-            // currentSeed
-            // 
-            this.currentSeed.AutoSize = true;
-            this.currentSeed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.currentSeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentSeed.Location = new System.Drawing.Point(135, 50);
-            this.currentSeed.Margin = new System.Windows.Forms.Padding(0);
-            this.currentSeed.Name = "currentSeed";
-            this.currentSeed.Size = new System.Drawing.Size(159, 50);
-            this.currentSeed.TabIndex = 3;
-            this.currentSeed.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // colorPicker
-            // 
-            this.colorPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorPicker.Location = new System.Drawing.Point(12, 387);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(107, 51);
-            this.colorPicker.TabIndex = 6;
-            this.colorPicker.Text = "Color";
-            this.colorPicker.UseVisualStyleBackColor = true;
-            this.colorPicker.Click += new System.EventHandler(this.colorPicker_Click);
-            // 
-            // displayColor
-            // 
-            this.displayColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.displayColor.Enabled = false;
-            this.displayColor.Location = new System.Drawing.Point(147, 387);
-            this.displayColor.Multiline = true;
-            this.displayColor.Name = "displayColor";
-            this.displayColor.Size = new System.Drawing.Size(159, 51);
-            this.displayColor.TabIndex = 7;
             // 
             // gameSelector
             // 
             this.gameSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gameSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameSelector.FormattingEnabled = true;
-            this.gameSelector.Location = new System.Drawing.Point(12, 349);
+            this.gameSelector.Location = new System.Drawing.Point(12, 608);
             this.gameSelector.Name = "gameSelector";
-            this.gameSelector.Size = new System.Drawing.Size(294, 32);
+            this.gameSelector.Size = new System.Drawing.Size(589, 32);
             this.gameSelector.TabIndex = 8;
             // 
             // settingsButton
             // 
             this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.Location = new System.Drawing.Point(172, 550);
+            this.settingsButton.Location = new System.Drawing.Point(13, 820);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(145, 52);
+            this.settingsButton.Size = new System.Drawing.Size(589, 40);
             this.settingsButton.TabIndex = 9;
             this.settingsButton.Text = "Settings";
             this.settingsButton.UseVisualStyleBackColor = true;
             this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
+            // currentSeed
+            // 
+            this.currentSeed.AutoSize = true;
+            this.currentSeed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.currentSeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentSeed.Location = new System.Drawing.Point(153, 50);
+            this.currentSeed.Margin = new System.Windows.Forms.Padding(0);
+            this.currentSeed.Name = "currentSeed";
+            this.currentSeed.Size = new System.Drawing.Size(436, 50);
+            this.currentSeed.TabIndex = 3;
+            this.currentSeed.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // inputSeedTB
+            // 
+            this.inputSeedTB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inputSeedTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSeedTB.Location = new System.Drawing.Point(153, 0);
+            this.inputSeedTB.Margin = new System.Windows.Forms.Padding(0);
+            this.inputSeedTB.Multiline = true;
+            this.inputSeedTB.Name = "inputSeedTB";
+            this.inputSeedTB.Size = new System.Drawing.Size(436, 50);
+            this.inputSeedTB.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 614);
+            this.ClientSize = new System.Drawing.Size(613, 872);
             this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.gameSelector);
-            this.Controls.Add(this.displayColor);
-            this.Controls.Add(this.colorPicker);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.generate);
             this.Controls.Add(this.bingoBoard);
@@ -578,7 +552,6 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -614,13 +587,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label inputSeedText;
         private System.Windows.Forms.Label currentSeedText;
-        private System.Windows.Forms.ColorDialog colorDialog;
-        private System.Windows.Forms.Button colorPicker;
-        private System.Windows.Forms.TextBox displayColor;
-        private System.Windows.Forms.TextBox inputSeedTB;
-        private System.Windows.Forms.Label currentSeed;
         private System.Windows.Forms.ComboBox gameSelector;
         private System.Windows.Forms.Button settingsButton;
+        private System.Windows.Forms.TextBox inputSeedTB;
+        private System.Windows.Forms.Label currentSeed;
     }
 }
 

@@ -18,7 +18,7 @@ namespace MDSRBingo
         {
             var settings = new Settings
             {
-                tileColor = Color.Red,
+                tileColor = Color.SkyBlue,
                 boardColor = Color.White,
                 fontColor = Color.Black
             };
