@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
@@ -29,6 +30,38 @@ namespace MDSRBingo
         // when form is loaded
         private void Form1_Load(object sender, EventArgs e)
         {
+            // verifies that settings.json exists
+            ValidateSettings();
+            
+            // gets necessary data for bingo board setup
+            BingoBoardSetup();
+
+        }
+
+        // Known Issue: since json, if user malforms the data manually, there will be issues reading
+        //              find a way to detect/ restructure if this happens
+        // creates settings.json if does not exist and applies default settings
+        private void ValidateSettings()
+        {
+            string path = Directory.GetCurrentDirectory() + "\\settings.json";
+
+            if(File.Exists(path))
+            {
+                return;
+            }
+
+            // grabs default settings
+            var settings = Settings.Default();
+
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string json = JsonSerializer.Serialize(settings, options);
+            File.WriteAllText(path, json);
+        }
+
+        // sets up the bingo board for use at runtime
+        private void BingoBoardSetup()
+        {
+            // bingo board setup
             foreach (Label cell in this.bingoBoard.Controls)
             {
                 cell.MouseClick += new MouseEventHandler(ClickOnCell);
@@ -47,15 +80,23 @@ namespace MDSRBingo
             }
 
             // pulls supported games list and populates the game selector
-            string path = Directory.GetCurrentDirectory() + "\\SupportedGames";
-            files = Directory.GetFiles(path);
-            foreach(string file in files) {
-                string currentFile = Path.GetFileName(file);
-                string[] split = currentFile.Split('.');
-                gameSelector.Items.Add(split[0]);
+            try
+            {
+                string path = Directory.GetCurrentDirectory() + "\\SupportedGames";
+                files = Directory.GetFiles(path);
+                foreach (string file in files)
+                {
+                    string currentFile = Path.GetFileName(file);
+                    string[] split = currentFile.Split('.');
+                    gameSelector.Items.Add(split[0]);
+                }
+                gameSelector.SelectedIndex = 0;
             }
-            gameSelector.SelectedIndex = 0;
-
+            catch (Exception f)
+            {
+                MessageBox.Show("Could not find the SupportedGames folder in the current directory." +
+                    "\n\nPlease ensure the SupportedGames folder is in the same diectory as MDSRBingo.exe.");
+            }
         }
 
         // when user clicks on a bingo cell, update the color to match chosen color and turn transparent if misclicked
@@ -195,10 +236,11 @@ namespace MDSRBingo
             }
         }
 
+        // opens the settings form for user to edit settings
         private void settingsButton_Click(object sender, EventArgs e)
         {
             SettingsTab settings = new SettingsTab();
-            settings.Show();
+            settings.ShowDialog();
         }
     }
 

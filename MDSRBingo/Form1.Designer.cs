@@ -568,6 +568,8 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.generate);
             this.Controls.Add(this.bingoBoard);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "MDSR Bingo";
             this.Load += new System.EventHandler(this.Form1_Load);
