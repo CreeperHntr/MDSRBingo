@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace MDSRBingo
 {
@@ -32,7 +33,7 @@ namespace MDSRBingo
         {
             string jsonPath = Directory.GetCurrentDirectory() + "\\settings.json";
             string json = File.ReadAllText(jsonPath);
-            Settings settings = JsonSerializer.Deserialize<Settings>(json);
+            Settings settings = JsonConvert.DeserializeObject<Settings>(json);
 
             MessageBox.Show(json);
 
@@ -79,8 +80,7 @@ namespace MDSRBingo
         {
             var settings = Settings.Default();
             string path = Directory.GetCurrentDirectory() + "\\settings.json";
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string json = JsonSerializer.Serialize(settings, options);
+            string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
 
             MessageBox.Show("Settings have been reverted to default");
@@ -96,8 +96,7 @@ namespace MDSRBingo
                 fontColor = fontDisplayColor.BackColor
             };
             string path = Directory.GetCurrentDirectory() + "\\settings.json";
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string json = JsonSerializer.Serialize(settings, options);
+            string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
 
             MessageBox.Show("Settings have been updated!");

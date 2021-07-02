@@ -5,10 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace MDSRBingo
 {
@@ -53,8 +53,7 @@ namespace MDSRBingo
             // grabs default settings
             var settings = Settings.Default();
 
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string json = JsonSerializer.Serialize(settings, options);
+            string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
         }
 
