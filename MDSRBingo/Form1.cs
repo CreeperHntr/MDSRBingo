@@ -222,6 +222,12 @@ namespace MDSRBingo
         }
 
         public static List<Label> GetBingoCells() { return bingoCells; }
+
+        private void creditsButton_Click(object sender, EventArgs e)
+        {
+            CreditsTab credits = new CreditsTab();
+            credits.ShowDialog();
+        }
     }
 
 }

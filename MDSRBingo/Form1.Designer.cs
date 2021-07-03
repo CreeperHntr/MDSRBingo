@@ -58,10 +58,11 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.inputSeedText = new System.Windows.Forms.Label();
             this.currentSeedText = new System.Windows.Forms.Label();
+            this.inputSeedTB = new System.Windows.Forms.TextBox();
+            this.currentSeed = new System.Windows.Forms.Label();
             this.gameSelector = new System.Windows.Forms.ComboBox();
             this.settingsButton = new System.Windows.Forms.Button();
-            this.currentSeed = new System.Windows.Forms.Label();
-            this.inputSeedTB = new System.Windows.Forms.TextBox();
+            this.creditsButton = new System.Windows.Forms.Button();
             this.bingoBoard.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -439,7 +440,7 @@
             // generate
             // 
             this.generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.generate.Location = new System.Drawing.Point(13, 774);
+            this.generate.Location = new System.Drawing.Point(11, 774);
             this.generate.Name = "generate";
             this.generate.Size = new System.Drawing.Size(590, 40);
             this.generate.TabIndex = 3;
@@ -488,26 +489,15 @@
             this.currentSeedText.Text = "Current Seed:";
             this.currentSeedText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // gameSelector
+            // inputSeedTB
             // 
-            this.gameSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gameSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameSelector.FormattingEnabled = true;
-            this.gameSelector.Location = new System.Drawing.Point(12, 608);
-            this.gameSelector.Name = "gameSelector";
-            this.gameSelector.Size = new System.Drawing.Size(589, 32);
-            this.gameSelector.TabIndex = 8;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.Location = new System.Drawing.Point(13, 820);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(589, 40);
-            this.settingsButton.TabIndex = 9;
-            this.settingsButton.Text = "Settings";
-            this.settingsButton.UseVisualStyleBackColor = true;
-            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            this.inputSeedTB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.inputSeedTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSeedTB.Location = new System.Drawing.Point(153, 21);
+            this.inputSeedTB.Margin = new System.Windows.Forms.Padding(0);
+            this.inputSeedTB.Name = "inputSeedTB";
+            this.inputSeedTB.Size = new System.Drawing.Size(436, 29);
+            this.inputSeedTB.TabIndex = 2;
             // 
             // currentSeed
             // 
@@ -521,22 +511,44 @@
             this.currentSeed.TabIndex = 3;
             this.currentSeed.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // inputSeedTB
+            // gameSelector
             // 
-            this.inputSeedTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inputSeedTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSeedTB.Location = new System.Drawing.Point(153, 0);
-            this.inputSeedTB.Margin = new System.Windows.Forms.Padding(0);
-            this.inputSeedTB.Multiline = true;
-            this.inputSeedTB.Name = "inputSeedTB";
-            this.inputSeedTB.Size = new System.Drawing.Size(436, 50);
-            this.inputSeedTB.TabIndex = 2;
+            this.gameSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gameSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameSelector.FormattingEnabled = true;
+            this.gameSelector.Location = new System.Drawing.Point(12, 608);
+            this.gameSelector.Name = "gameSelector";
+            this.gameSelector.Size = new System.Drawing.Size(589, 32);
+            this.gameSelector.TabIndex = 8;
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Location = new System.Drawing.Point(11, 820);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(291, 40);
+            this.settingsButton.TabIndex = 9;
+            this.settingsButton.Text = "Settings";
+            this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            // 
+            // creditsButton
+            // 
+            this.creditsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditsButton.Location = new System.Drawing.Point(308, 820);
+            this.creditsButton.Name = "creditsButton";
+            this.creditsButton.Size = new System.Drawing.Size(291, 40);
+            this.creditsButton.TabIndex = 10;
+            this.creditsButton.Text = "Credits";
+            this.creditsButton.UseVisualStyleBackColor = true;
+            this.creditsButton.Click += new System.EventHandler(this.creditsButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 872);
+            this.Controls.Add(this.creditsButton);
             this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.gameSelector);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -591,6 +603,7 @@
         private System.Windows.Forms.Button settingsButton;
         private System.Windows.Forms.TextBox inputSeedTB;
         private System.Windows.Forms.Label currentSeed;
+        private System.Windows.Forms.Button creditsButton;
     }
 }
 
