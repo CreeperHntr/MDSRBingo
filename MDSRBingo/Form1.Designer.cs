@@ -69,6 +69,7 @@
             // 
             // bingoBoard
             // 
+            this.bingoBoard.BackColor = System.Drawing.Color.White;
             this.bingoBoard.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.bingoBoard.ColumnCount = 5;
             this.bingoBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
