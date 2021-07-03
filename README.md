@@ -8,7 +8,7 @@ If you wish to play custom bingo boards, please read the "Custom Bingo Boards" s
 ## ***How to Play:***
 Run MDSRBingo.exe, select your game from the dropdown menu, and click generate. If you wish to use a seed, type the seed in the seed field before clicking generate. Please note, seeds may only be integer values.
 
-## ***User Settings***
+## ***User Settings:***
 If you wish to change the color of the board, clicked tiles, and font, you may do so from the settings button. If you wish to manually edit your settings, you may do so from the 'settings.json' file generated on first time launch. All three (3) fields accept RGB values. If 'settings.json' becomes malformed due to manual errors, you may safely delete the 'settings.json' file and re-launch MDSRBingo.exe to regenerate it with the default values.
 
 ## ***Custom Bingo Boards:***
