@@ -46,6 +46,7 @@ namespace MDSRBingo
             this.quarthTwitch = new System.Windows.Forms.Button();
             this.quarth = new System.Windows.Forms.Label();
             this.creeperTwitter = new System.Windows.Forms.Button();
+            this.metaTwitter = new System.Windows.Forms.Button();
             this.mdsrPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -192,6 +193,7 @@ namespace MDSRBingo
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.metaTwitter, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.meta, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.metaTwitch, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.metaYT, 0, 2);
@@ -307,6 +309,20 @@ namespace MDSRBingo
             this.creeperTwitter.UseVisualStyleBackColor = true;
             this.creeperTwitter.Click += new System.EventHandler(this.creeperTwitter_Click);
             // 
+            // metaTwitter
+            // 
+            this.metaTwitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metaTwitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metaTwitter.Location = new System.Drawing.Point(3, 99);
+            this.metaTwitter.Name = "metaTwitter";
+            this.metaTwitter.Size = new System.Drawing.Size(186, 26);
+            this.metaTwitter.TabIndex = 10;
+            this.metaTwitter.Text = "Twitter";
+            this.metaTwitter.UseVisualStyleBackColor = true;
+            this.metaTwitter.Click += new System.EventHandler(this.metaTwitter_Click);
+            // 
             // CreditsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,5 +368,6 @@ namespace MDSRBingo
         private System.Windows.Forms.Label quarth;
         private System.Windows.Forms.Button quarthTwitch;
         private System.Windows.Forms.Button creeperTwitter;
+        private System.Windows.Forms.Button metaTwitter;
     }
 }

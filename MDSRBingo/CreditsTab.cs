@@ -61,10 +61,16 @@ namespace MDSRBingo
             Process.Start("https://www.youtube.com/metaspeedruns");
         }
 
+        private void metaTwitter_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://twitter.com/ItsCamNotCan");
+        }
+
         // Quarth234 Socials
         private void quarthTwitch_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.twitch.tv/quarth234");
         }
+
     }
 }
