@@ -60,6 +60,7 @@ namespace MDSRBingo
                 foreach(Label cell in bingoCells)
                 {
                     cell.ForeColor = GetJsonFile().fontColor;
+                    cell.BackColor = GetJsonFile().boardColor;
                 }
                 return;
             }
@@ -79,7 +80,6 @@ namespace MDSRBingo
             {
                 cell.MouseClick += new MouseEventHandler(ClickOnCell);
                 cell.Text = "";
-                cell.BackColor = Color.Transparent;
                 bingoCells.Add(cell);
             }
 
@@ -107,13 +107,12 @@ namespace MDSRBingo
         public void ClickOnCell(object sender, MouseEventArgs e)
         {
             Label label = (Label)sender;
-            settings = GetJsonFile();
-            label.BackColor = label.BackColor == settings.tileColor ? Color.Transparent : settings.tileColor;
+            label.BackColor = label.BackColor == GetJsonFile().tileColor ? GetJsonFile().boardColor : GetJsonFile().tileColor;
         }
 
         private void generate_Click(object sender, EventArgs e)
         {
-            foreach(Label cell in bingoCells) { cell.BackColor = Color.Transparent; }
+            foreach(Label cell in bingoCells) { cell.BackColor = GetJsonFile().boardColor; }
 
             if(!(inputSeedTB.Text == ""))
             {
@@ -150,7 +149,6 @@ namespace MDSRBingo
             string[] text = File.ReadAllLines(currentFile);
 
             // checks to ensure chosen game has enough challenges to prevent the client from crashing
-            // make sure to change to 24 if community requests free space back
             if(text.Length < 25)
             {
                 MessageBox.Show("There are not enough challenges in your currently selected game." +
@@ -182,10 +180,10 @@ namespace MDSRBingo
             string[] text = File.ReadAllLines(currentFile);
 
             // checks to ensure chosen game has enough challenges to prevent the client from crashing
-            if (text.Length < 24)
+            if (text.Length < 25)
             {
                 MessageBox.Show("There are not enough challenges in your currently selected game." +
-                    "\nA minimum of 24 challenges is required.");
+                    "\nA minimum of 25 challenges is required.");
                 return;
             }
 

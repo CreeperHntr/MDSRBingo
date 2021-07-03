@@ -83,6 +83,12 @@ namespace MDSRBingo
             string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
 
+            ApplyNewSettings(settings);
+
+            tileDisplayColor.BackColor = settings.tileColor;
+            boardDisplayColor.BackColor = settings.boardColor;
+            fontDisplayColor.BackColor = settings.fontColor;
+
             MessageBox.Show("Settings have been reverted to default!");
 
             //TODO: deserialize json to update settings window after resetting
@@ -99,15 +105,20 @@ namespace MDSRBingo
             string json = JsonConvert.SerializeObject(settings);
             File.WriteAllText(path, json);
 
-            List<Label> bingoCells = Form1.GetBingoCells();
-
-            foreach(Label cell in bingoCells)
-            {
-                cell.ForeColor = settings.fontColor;
-                if(cell.BackColor != Color.Transparent) { cell.BackColor = settings.tileColor; }
-            }
+            ApplyNewSettings(settings);
 
             MessageBox.Show("Settings have been updated!");
+        }
+
+        private void ApplyNewSettings(Settings settings)
+        {
+            List<Label> bingoCells = Form1.GetBingoCells();
+
+            foreach (Label cell in bingoCells)
+            {
+                cell.ForeColor = settings.fontColor;
+                if (cell.BackColor != settings.boardColor) { cell.BackColor = settings.boardColor; }
+            }
         }
     }
 }
