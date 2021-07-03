@@ -34,6 +34,11 @@ namespace MDSRBingo
             Process.Start("https://www.youtube.com/ModernDOOMSpeedrunning");
         }
 
+        private void mdsrTwitter_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://twitter.com/ModernDOOMSR");
+        }
+
         // CreeperHntr Socials
         private void creeperTwitch_Click(object sender, EventArgs e)
         {

@@ -47,6 +47,7 @@ namespace MDSRBingo
             this.quarth = new System.Windows.Forms.Label();
             this.creeperTwitter = new System.Windows.Forms.Button();
             this.metaTwitter = new System.Windows.Forms.Button();
+            this.mdsrTwitter = new System.Windows.Forms.Button();
             this.mdsrPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -62,7 +63,7 @@ namespace MDSRBingo
             this.mdsr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mdsr.Location = new System.Drawing.Point(3, 0);
             this.mdsr.Name = "mdsr";
-            this.mdsr.Size = new System.Drawing.Size(186, 32);
+            this.mdsr.Size = new System.Drawing.Size(186, 28);
             this.mdsr.TabIndex = 0;
             this.mdsr.Text = "MDSR";
             this.mdsr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,9 +74,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mdsrDiscord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdsrDiscord.Location = new System.Drawing.Point(3, 35);
+            this.mdsrDiscord.Location = new System.Drawing.Point(3, 31);
             this.mdsrDiscord.Name = "mdsrDiscord";
-            this.mdsrDiscord.Size = new System.Drawing.Size(186, 26);
+            this.mdsrDiscord.Size = new System.Drawing.Size(186, 22);
             this.mdsrDiscord.TabIndex = 1;
             this.mdsrDiscord.Text = "Discord";
             this.mdsrDiscord.UseVisualStyleBackColor = true;
@@ -87,9 +88,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mdsrTwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdsrTwitch.Location = new System.Drawing.Point(3, 67);
+            this.mdsrTwitch.Location = new System.Drawing.Point(3, 59);
             this.mdsrTwitch.Name = "mdsrTwitch";
-            this.mdsrTwitch.Size = new System.Drawing.Size(186, 26);
+            this.mdsrTwitch.Size = new System.Drawing.Size(186, 22);
             this.mdsrTwitch.TabIndex = 2;
             this.mdsrTwitch.Text = "Twitch";
             this.mdsrTwitch.UseVisualStyleBackColor = true;
@@ -101,9 +102,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mdsrYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdsrYT.Location = new System.Drawing.Point(3, 99);
+            this.mdsrYT.Location = new System.Drawing.Point(3, 87);
             this.mdsrYT.Name = "mdsrYT";
-            this.mdsrYT.Size = new System.Drawing.Size(186, 26);
+            this.mdsrYT.Size = new System.Drawing.Size(186, 22);
             this.mdsrYT.TabIndex = 3;
             this.mdsrYT.Text = "YouTube";
             this.mdsrYT.UseVisualStyleBackColor = true;
@@ -113,19 +114,20 @@ namespace MDSRBingo
             // 
             this.mdsrPanel.ColumnCount = 1;
             this.mdsrPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.mdsrPanel.Controls.Add(this.mdsrTwitter, 0, 4);
             this.mdsrPanel.Controls.Add(this.mdsrTwitch, 0, 2);
             this.mdsrPanel.Controls.Add(this.mdsrYT, 0, 3);
             this.mdsrPanel.Controls.Add(this.mdsr, 0, 0);
             this.mdsrPanel.Controls.Add(this.mdsrDiscord, 0, 1);
             this.mdsrPanel.Location = new System.Drawing.Point(12, 12);
             this.mdsrPanel.Name = "mdsrPanel";
-            this.mdsrPanel.RowCount = 4;
-            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.mdsrPanel.Size = new System.Drawing.Size(192, 128);
+            this.mdsrPanel.RowCount = 5;
+            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mdsrPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mdsrPanel.Size = new System.Drawing.Size(192, 140);
             this.mdsrPanel.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -138,13 +140,13 @@ namespace MDSRBingo
             this.tableLayoutPanel1.Controls.Add(this.creeperYT, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(245, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 128);
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 140);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // creeperTwitch
@@ -153,9 +155,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.creeperTwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creeperTwitch.Location = new System.Drawing.Point(3, 35);
+            this.creeperTwitch.Location = new System.Drawing.Point(3, 31);
             this.creeperTwitch.Name = "creeperTwitch";
-            this.creeperTwitch.Size = new System.Drawing.Size(186, 26);
+            this.creeperTwitch.Size = new System.Drawing.Size(186, 22);
             this.creeperTwitch.TabIndex = 2;
             this.creeperTwitch.Text = "Twitch";
             this.creeperTwitch.UseVisualStyleBackColor = true;
@@ -167,9 +169,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.creeperYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creeperYT.Location = new System.Drawing.Point(3, 67);
+            this.creeperYT.Location = new System.Drawing.Point(3, 59);
             this.creeperYT.Name = "creeperYT";
-            this.creeperYT.Size = new System.Drawing.Size(186, 26);
+            this.creeperYT.Size = new System.Drawing.Size(186, 22);
             this.creeperYT.TabIndex = 3;
             this.creeperYT.Text = "YouTube";
             this.creeperYT.UseVisualStyleBackColor = true;
@@ -184,7 +186,7 @@ namespace MDSRBingo
             this.creeper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creeper.Location = new System.Drawing.Point(3, 0);
             this.creeper.Name = "creeper";
-            this.creeper.Size = new System.Drawing.Size(186, 32);
+            this.creeper.Size = new System.Drawing.Size(186, 28);
             this.creeper.TabIndex = 0;
             this.creeper.Text = "CreeperHntr (Dev)";
             this.creeper.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,15 +199,15 @@ namespace MDSRBingo
             this.tableLayoutPanel2.Controls.Add(this.meta, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.metaTwitch, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.metaYT, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 172);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 186);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 4;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 128);
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 140);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // metaTwitch
@@ -214,9 +216,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metaTwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metaTwitch.Location = new System.Drawing.Point(3, 35);
+            this.metaTwitch.Location = new System.Drawing.Point(3, 31);
             this.metaTwitch.Name = "metaTwitch";
-            this.metaTwitch.Size = new System.Drawing.Size(186, 26);
+            this.metaTwitch.Size = new System.Drawing.Size(186, 22);
             this.metaTwitch.TabIndex = 2;
             this.metaTwitch.Text = "Twitch";
             this.metaTwitch.UseVisualStyleBackColor = true;
@@ -228,9 +230,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metaYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metaYT.Location = new System.Drawing.Point(3, 67);
+            this.metaYT.Location = new System.Drawing.Point(3, 59);
             this.metaYT.Name = "metaYT";
-            this.metaYT.Size = new System.Drawing.Size(186, 26);
+            this.metaYT.Size = new System.Drawing.Size(186, 22);
             this.metaYT.TabIndex = 3;
             this.metaYT.Text = "YouTube";
             this.metaYT.UseVisualStyleBackColor = true;
@@ -245,7 +247,7 @@ namespace MDSRBingo
             this.meta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.meta.Location = new System.Drawing.Point(3, 0);
             this.meta.Name = "meta";
-            this.meta.Size = new System.Drawing.Size(186, 32);
+            this.meta.Size = new System.Drawing.Size(186, 28);
             this.meta.TabIndex = 0;
             this.meta.Text = "Meta_LIVE (Assets)";
             this.meta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,15 +258,15 @@ namespace MDSRBingo
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.quarth, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.quarthTwitch, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(245, 172);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(245, 186);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(192, 128);
+            this.tableLayoutPanel3.RowCount = 5;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(192, 140);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // quarthTwitch
@@ -273,9 +275,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.quarthTwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quarthTwitch.Location = new System.Drawing.Point(3, 35);
+            this.quarthTwitch.Location = new System.Drawing.Point(3, 31);
             this.quarthTwitch.Name = "quarthTwitch";
-            this.quarthTwitch.Size = new System.Drawing.Size(186, 26);
+            this.quarthTwitch.Size = new System.Drawing.Size(186, 22);
             this.quarthTwitch.TabIndex = 2;
             this.quarthTwitch.Text = "Twitch";
             this.quarthTwitch.UseVisualStyleBackColor = true;
@@ -290,7 +292,7 @@ namespace MDSRBingo
             this.quarth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quarth.Location = new System.Drawing.Point(3, 0);
             this.quarth.Name = "quarth";
-            this.quarth.Size = new System.Drawing.Size(186, 32);
+            this.quarth.Size = new System.Drawing.Size(186, 28);
             this.quarth.TabIndex = 0;
             this.quarth.Text = "Quarth234 (QA)";
             this.quarth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,9 +303,9 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.creeperTwitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creeperTwitter.Location = new System.Drawing.Point(3, 99);
+            this.creeperTwitter.Location = new System.Drawing.Point(3, 87);
             this.creeperTwitter.Name = "creeperTwitter";
-            this.creeperTwitter.Size = new System.Drawing.Size(186, 26);
+            this.creeperTwitter.Size = new System.Drawing.Size(186, 22);
             this.creeperTwitter.TabIndex = 10;
             this.creeperTwitter.Text = "Twitter";
             this.creeperTwitter.UseVisualStyleBackColor = true;
@@ -315,19 +317,33 @@ namespace MDSRBingo
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metaTwitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metaTwitter.Location = new System.Drawing.Point(3, 99);
+            this.metaTwitter.Location = new System.Drawing.Point(3, 87);
             this.metaTwitter.Name = "metaTwitter";
-            this.metaTwitter.Size = new System.Drawing.Size(186, 26);
+            this.metaTwitter.Size = new System.Drawing.Size(186, 22);
             this.metaTwitter.TabIndex = 10;
             this.metaTwitter.Text = "Twitter";
             this.metaTwitter.UseVisualStyleBackColor = true;
             this.metaTwitter.Click += new System.EventHandler(this.metaTwitter_Click);
             // 
+            // mdsrTwitter
+            // 
+            this.mdsrTwitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mdsrTwitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mdsrTwitter.Location = new System.Drawing.Point(3, 115);
+            this.mdsrTwitter.Name = "mdsrTwitter";
+            this.mdsrTwitter.Size = new System.Drawing.Size(186, 22);
+            this.mdsrTwitter.TabIndex = 10;
+            this.mdsrTwitter.Text = "Twitter";
+            this.mdsrTwitter.UseVisualStyleBackColor = true;
+            this.mdsrTwitter.Click += new System.EventHandler(this.mdsrTwitter_Click);
+            // 
             // CreditsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 312);
+            this.ClientSize = new System.Drawing.Size(449, 345);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -369,5 +385,6 @@ namespace MDSRBingo
         private System.Windows.Forms.Button quarthTwitch;
         private System.Windows.Forms.Button creeperTwitter;
         private System.Windows.Forms.Button metaTwitter;
+        private System.Windows.Forms.Button mdsrTwitter;
     }
 }
