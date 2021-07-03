@@ -123,7 +123,8 @@ namespace MDSRBingo
                 }
                 catch(Exception f)
                 {
-                    MessageBox.Show("Invalid seed format");
+                    MessageBox.Show("Invalid seed format!" +
+                        "\n\nPlease only use integer values.");
                 }
             }
             else
