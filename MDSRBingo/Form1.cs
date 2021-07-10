@@ -32,6 +32,9 @@ namespace MDSRBingo
         // when form is loaded
         private void Form1_Load(object sender, EventArgs e)
         {
+            // generates the default set of challenges for the user on first init
+            SupportedGamesGenerator.GenerateDefaults();
+
             // gets necessary data for bingo board setup
             BingoBoardSetup();
 
@@ -86,7 +89,7 @@ namespace MDSRBingo
             // pulls supported games list and populates the game selector
             try
             {
-                string path = Directory.GetCurrentDirectory() + "\\SupportedGames";
+                string path = Directory.GetCurrentDirectory() + "\\Supported Games";
                 files = Directory.GetFiles(path);
                 foreach (string file in files)
                 {
@@ -98,8 +101,8 @@ namespace MDSRBingo
             }
             catch (Exception f)
             {
-                MessageBox.Show("Could not find the SupportedGames folder in the current directory." +
-                    "\n\nPlease ensure the SupportedGames folder is in the same diectory as MDSRBingo.exe.");
+                MessageBox.Show("Could not find the Supported Games folder in the current directory." +
+                    "\n\nPlease ensure the Supported Games folder is in the same diectory as MDSRBingo.exe.");
             }
         }
 

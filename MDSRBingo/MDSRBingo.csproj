@@ -71,6 +71,7 @@
     <Compile Include="SettingsTab.Designer.cs">
       <DependentUpon>SettingsTab.cs</DependentUpon>
     </Compile>
+    <Compile Include="SupportedGamesGenerator.cs" />
     <EmbeddedResource Include="CreditsTab.resx">
       <DependentUpon>CreditsTab.cs</DependentUpon>
     </EmbeddedResource>
