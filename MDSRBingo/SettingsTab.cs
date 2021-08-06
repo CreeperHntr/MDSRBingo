@@ -45,7 +45,7 @@ namespace MDSRBingo
         private void tileColorPicker_Click(object sender, EventArgs e)
         {
             ColorDialog MyDialog = new ColorDialog();
-            MyDialog.AllowFullOpen = false;
+            //MyDialog.AllowFullOpen = false;
             MyDialog.ShowHelp = true;
             MyDialog.Color = tileDisplayColor.ForeColor;
 
@@ -56,7 +56,7 @@ namespace MDSRBingo
         private void boardColorPicker_Click(object sender, EventArgs e)
         {
             ColorDialog MyDialog = new ColorDialog();
-            MyDialog.AllowFullOpen = false;
+            //MyDialog.AllowFullOpen = false;
             MyDialog.ShowHelp = true;
             MyDialog.Color = boardDisplayColor.ForeColor;
 
@@ -67,7 +67,7 @@ namespace MDSRBingo
         private void fontColorPicker_Click(object sender, EventArgs e)
         {
             ColorDialog MyDialog = new ColorDialog();
-            MyDialog.AllowFullOpen = false;
+            //MyDialog.AllowFullOpen = false;
             MyDialog.ShowHelp = true;
             MyDialog.Color = fontDisplayColor.ForeColor;
 
